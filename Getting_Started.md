@@ -56,7 +56,7 @@ droplet_name         = "your_droplet_name"        # Name for your DigitalOcean D
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/autostack.git
+   git clone https://github.com/CamiloCod3/autostack.git
    cd autostack
    ```
 
