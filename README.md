@@ -1,6 +1,7 @@
 ---
 
-# 🚀 Autostack: Automated Server Deployment with Terraform
+# Autostack: Automated Server Deployment with Terraform
+
 
 **Automate Your Server Deployment with Ease**
 Autostack is a powerful, flexible solution for automating server deployment and configuration using Terraform, supported by Bash scripts and Docker. Designed with scalability, security, and efficiency in mind, Autostack is ideal for deploying applications like Odoo on cloud platforms, ensuring reliable infrastructure setup with minimal manual intervention.
@@ -38,7 +39,6 @@ Autostack leverages **Terraform** for infrastructure automation, **Bash scripts*
 │           └── user_ssh_configure.sh      # Enhances SSH security settings
 ├── README.md                    # Main project README
 └── variables.tf                 # Global variables for Terraform
-
 ```
 
 ## 🔒 Key Security Features
