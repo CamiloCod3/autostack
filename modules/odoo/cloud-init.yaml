@@ -1,0 +1,15 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+
+runcmd:
+  - echo "[INFO] Starting cloud-init process" >> /var/log/cloud-init-output.log
+  - echo "[INFO] Running setup scripts..." >> /var/log/cloud-init-output.log
+  - if [ -f /root/setup-scripts/run_all_setup.sh ]; then
+    bash /root/setup-scripts/run_all_setup.sh >> /var/log/setup.log 2>&1 || {
+    echo "[ERROR] Setup failed. Check /var/log/setup.log for details." >> /var/log/cloud-init-output.log; exit 1;
+    }
+    else
+    echo "[ERROR] Main setup script not found." >> /var/log/cloud-init-output.log
+    exit 1
+    fi

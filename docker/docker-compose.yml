@@ -1,0 +1,48 @@
+services:
+  odoo:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../modules/odoo/setup-scripts:/root/setup-scripts
+    env_file:
+      - .env
+    environment:
+      - NON_ROOT_USER=odoo_user
+      - NON_ROOT_PASSWORD
+      - SSH_PUBLIC_KEY
+      - ADMIN_PASSWD
+      - DB_HOST
+      - DB_PORT
+      - DB_USER
+      - DB_PASSWORD
+      - DOMAIN_NAME
+      - START_SSH=false  # Control for SSH
+    ports:
+      - "8069:8069"
+    depends_on:
+      - db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8069"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=odoo
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_USER=${DB_USER}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  pgdata:

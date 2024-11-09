@@ -1,0 +1,43 @@
+# Terraform state and config files
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+terraform.tfplan
+terraform.lock.hcl
+terraform.tfvars.lock.info
+
+# Crash logs
+crash.log
+
+# Override files (local modifications)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Sensitive keys and credentials
+*.pem
+secrets.yaml
+*_credentials.json
+
+# OS and editor-specific files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and backups
+*.log
+*.bak
+*.backup
+*~
+.env
+
+# Odoo specific files
+odoo-server.log
+odoo.conf
+logs/
