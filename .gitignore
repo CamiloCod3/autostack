@@ -41,3 +41,7 @@ secrets.yaml
 odoo-server.log
 odoo.conf
 logs/
+
+
+.terraform.lock.hcl
+.fuse_hidden*
