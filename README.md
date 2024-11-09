@@ -21,7 +21,7 @@ Autostack leverages **Terraform** for infrastructure automation, **Bash scripts*
 ├── modules/
 │   └── odoo/
 │       ├── cloud-init.yaml      # Cloud-init configuration for server initialization
-│       ├── main.tf              # Module-specific Terraform configuration│       
+│       ├── main.tf              # Module-specific Terraform configuration       
 │       └── setup-scripts/       # Scripts for automated server configuration
 │           ├── fail2ban_setup.sh          # Fail2Ban setup for SSH security
 │           ├── firewall_setup.sh          # UFW firewall configuration
