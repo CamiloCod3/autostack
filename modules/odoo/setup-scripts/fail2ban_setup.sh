@@ -13,7 +13,7 @@ error_log() {
 
 log "Starting Fail2Ban setup for SSH on port 2222..."
 
-# Install Fail2Ban without checking if it is installed (since we're provisioning a new server)
+# Install Fail2Ban without checking if it is installed
 log "Installing Fail2Ban..."
 if ! apt-get update && apt-get install -y fail2ban; then
     error_log "Failed to install Fail2Ban. Aborting setup."

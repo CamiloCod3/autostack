@@ -19,7 +19,7 @@ log "Creating Odoo directory structure..."
 mkdir -p /opt/odoo17/custom-addons /var/log/odoo17
 chown -R "${NON_ROOT_USER}:${NON_ROOT_USER}" /opt/odoo17 /var/log/odoo17
 
-# Clone the Odoo 17 repository (forcing it to clone every time)
+# Clone the Odoo 17 repository
 log "Cloning Odoo 17 source code..."
 rm -rf /opt/odoo17/odoo # Remove any existing directory to avoid issues
 sudo -u "${NON_ROOT_USER}" git clone https://github.com/odoo/odoo --depth 1 --branch 17.0 /opt/odoo17/odoo || {

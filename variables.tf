@@ -41,8 +41,7 @@ variable "ssh_key_id" {
 # SSH Private Key Path
 variable "ssh_private_key_path" {
   description = "Path to the SSH private key file used for accessing the droplet."
-  type        = string
-  default     = "~/.ssh/odoo1_rsa"
+  type        = string  
 }
 
 variable "ssh_public_key" {
@@ -55,7 +54,7 @@ variable "non_root_user" {
   description = "Non-root user for the server"
   type        = string
   sensitive   = true
-  default     = "admin" # Default non-root user
+  default     = "admin"
 }
 
 variable "non_root_password" {

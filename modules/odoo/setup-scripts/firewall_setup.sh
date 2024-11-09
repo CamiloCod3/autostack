@@ -19,7 +19,7 @@ log "Setting default UFW rules (deny incoming, allow outgoing)..."
 ufw default deny incoming
 ufw default allow outgoing
 
-# Allow HTTP/HTTPS traffic for Cloudflare's IP ranges
+# Allow HTTP/HTTPS traffic for Cloudflare IP ranges
 log "Fetching and allowing Cloudflare IP ranges for ports 80 and 443..."
 cloudflare_ips=$(curl -s https://www.cloudflare.com/ips-v4)
 for ip in $cloudflare_ips; do
