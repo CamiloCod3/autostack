@@ -38,6 +38,7 @@ Autostack leverages **Terraform** for infrastructure automation, **Bash scripts*
 │           └── user_ssh_configure.sh      # Enhances SSH security settings
 ├── README.md                    # Main project README
 └── variables.tf                 # Global variables for Terraform
+
 ```
 
 ## 🔒 Key Security Features
