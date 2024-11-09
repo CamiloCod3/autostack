@@ -1,8 +1,8 @@
 terraform {
   cloud {
-    organization = "autolead_team"
+    organization = "your_organization"  # Replace with your Terraform Cloud organization
     workspaces {
-      name = "odoo_terraform"
+      name = "your_workspace"  # Replace with your workspace name
     }
   }
 
