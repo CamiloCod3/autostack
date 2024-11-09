@@ -21,20 +21,19 @@ Autostack leverages **Terraform** for infrastructure automation, **Bash scripts*
 ├── modules/
 │   └── odoo/
 │       ├── cloud-init.yaml      # Cloud-init configuration for server initialization
-│       ├── main.tf              # Module-specific Terraform configuration
-│       ├── README.md            # Module-specific README
+│       ├── main.tf              # Module-specific Terraform configuration│       
 │       └── setup-scripts/       # Scripts for automated server configuration
 │           ├── fail2ban_setup.sh          # Fail2Ban setup for SSH security
 │           ├── firewall_setup.sh          # UFW firewall configuration
 │           ├── odoo_install.sh            # Odoo installation and setup
-│           ├── run_all_setup.sh           # Orchestrator script to run all setup scripts
+│           ├── run_all_setup.sh           # Script to run all setup scripts
 │           ├── security_updates_setup.sh  # Configures automatic security updates
 │           ├── sensitive_files_setup.sh   # Sets up Nginx and SSL for secure access
 │           ├── swap_memory_configure.sh   # Configures swap memory
 │           ├── system_setup.sh            # Installs system packages and dependencies
 │           ├── user_db_setup.sh           # Creates users and configures PostgreSQL
 │           └── user_ssh_configure.sh      # Enhances SSH security settings
-├── README.md                    # Main project README
+├── README.md
 └── variables.tf                 # Global variables for Terraform
 ```
 
