@@ -2,7 +2,7 @@
 
 # 🚀 Autostack: Automated Server Deployment with Terraform
 
-**Automate Your Server Deployment with Ease**  
+**Automate Your Server Deployment with Ease**
 Autostack is a powerful, flexible solution for automating server deployment and configuration using Terraform, supported by Bash scripts and Docker. Designed with scalability, security, and efficiency in mind, Autostack is ideal for deploying applications like Odoo on cloud platforms, ensuring reliable infrastructure setup with minimal manual intervention.
 
 ## 📁 Project Overview
@@ -75,8 +75,6 @@ In developing Autostack, I gained experience in:
 
 For a full guide on setup and deployment, refer to the [Getting Started](./Getting_Started.md) document, which includes detailed steps on installation, configuration, and execution.
 
----
-
 **Contributions**: Interested in improving Autostack? Feel free to fork the repository, make changes, and submit a pull request!
 
---- 
+---
