@@ -1,14 +1,12 @@
----
 
-# Autostack: Automated Server Deployment with Terraform
+# 🚀 Autostack: Automated Server Deployment with Terraform
 
-
-**Automate Your Server Deployment with Ease**
+**Automate Your Server Deployment with Ease**  
 Autostack is a powerful, flexible solution for automating server deployment and configuration using Terraform, supported by Bash scripts and Docker. Designed with scalability, security, and efficiency in mind, Autostack is ideal for deploying applications like Odoo on cloud platforms, ensuring reliable infrastructure setup with minimal manual intervention.
 
 ## 📁 Project Overview
 
-Autostack leverages **Terraform** for infrastructure automation, **Bash scripts** for seamless configuration, and **Docker** for local testing. Cloudflare is used for DNS management, allowing for efficient handling of domain records. The project automates key aspects of server setup, including SSH security, firewall configuration, Fail2Ban, swap memory allocation, and Nginx with SSL for secure access.
+Autostack leverages **Terraform** for infrastructure automation, **Bash scripts** for seamless configuration, and **Docker** for local testing. The project automates key aspects of server setup, including SSH security, firewall configuration, Fail2Ban, swap memory allocation, and Nginx with SSL for secure access.
 
 ### Project Structure
 
@@ -49,10 +47,6 @@ Autostack leverages **Terraform** for infrastructure automation, **Bash scripts*
 - **Enhanced SSH Security**: Configures SSH to run on a custom port with restricted access.
 - **SSL-Enabled Nginx**: Ensures secure access to services through Nginx.
 
-## 🌐 Cloudflare DNS Management
-
-Autostack integrates with Cloudflare to manage DNS records for both the root domain and subdomains. This ensures your server remains accessible under a custom domain with automated DNS configurations.
-
 ## 🌐 Local Testing with Docker
 
 The **docker/** directory provides Docker configurations to simulate the server environment locally. This allows you to test configurations and scripts before deploying to a cloud environment, helping ensure reliable and consistent results in production.
@@ -69,12 +63,14 @@ In developing Autostack, I gained experience in:
 - **Server Security Best Practices**: Implementing UFW, Fail2Ban, automated updates, and SSH security enhancements.
 - **Automation with Bash Scripting**: Streamlining server setup and configuration tasks.
 - **Local Testing Using Docker**: Creating a reliable testing environment that mimics the production setup.
-- **Cloud Infrastructure Management and DNS**: Deploying and managing servers on cloud platforms with Terraform, and managing DNS records with Cloudflare.
+- **Cloud Infrastructure Management**: Deploying and managing servers on cloud platforms with Terraform.
 
 ## 📖 Documentation
 
 For a full guide on setup and deployment, refer to the [Getting Started](./Getting_Started.md) document, which includes detailed steps on installation, configuration, and execution.
 
-**Contributions**: Interested in improving Autostack? Feel free to fork the repository, make changes, and submit a pull request!
+---
+
+**Contributions: Interested in improving Autostack? Feel free to fork the repository, make changes, and submit a pull request!
 
 ---
